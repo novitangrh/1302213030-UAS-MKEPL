@@ -15,6 +15,7 @@ public class DriverBelanjaan {
 
         belanjaan.tambahDiskon("Shampo", 5000);
         belanjaan.tambahDiskon("Buku", 3000);
+        belanjaan.tambahDiskon("Sabun", 3000);
         belanjaan.tampilkanDiskon();
 
         belanjaan.tampilkanTotalDenganDiskon();
