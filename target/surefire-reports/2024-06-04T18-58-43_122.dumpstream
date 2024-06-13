@@ -1,0 +1,5 @@
+# Created at 2024-06-04T18:58:43.408
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Kuliah\Semester 6\Manajemen Konfigurasi & Evolusi Software\nyoba\nyoba\tess\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
