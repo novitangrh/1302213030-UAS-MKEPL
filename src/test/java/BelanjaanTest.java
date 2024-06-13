@@ -184,4 +184,25 @@ public class BelanjaanTest {
 
         assertEquals(25000, belanjaan.dapatkanTotalHarga());
     }
+    
+    @Test
+    public void testGagalTambahItem() {
+        belanjaan.tambahItem("Shampo", 20000, "Kebutuhan Rumah Tangga");
+                assertEquals(15000, belanjaan.dapatkanTotalHarga());
+    }
+
+    @Test
+    public void testGagalTambahDiskon() {
+        belanjaan.tambahItem("Shampo", 20000, "Kebutuhan Rumah Tangga");
+        belanjaan.tambahDiskon("Shampo", 5000);
+        assertEquals(20000, belanjaan.dapatkanTotalHarga());
+    }
+
+    @Test
+    public void testGagalHapusItem() {
+        belanjaan.tambahItem("Shampo", 20000, "Kebutuhan Rumah Tangga");
+        belanjaan.hapusItem("Sabun");
+        assertEquals(0, belanjaan.dapatkanTotalHarga());
+    }
+
 }
